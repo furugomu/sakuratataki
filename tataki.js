@@ -100,6 +100,8 @@ function Sakura() {
 
 function Game(canvas) {
   var stage = new createjs.Stage(canvas);
+  createjs.Touch.enable(stage);
+
   var holes = this.holes = [];
   var positions = [
     {x: 40, y: 240},
