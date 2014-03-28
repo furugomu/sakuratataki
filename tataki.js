@@ -126,6 +126,7 @@ function Game(canvas) {
 
 function main() {
   var canvas = document.getElementById('canvas');
+  canvas.addEventListener('selectstart', function(e) {e.preventDefault()}, false);
   var game = window.game = new Game(canvas);
   createjs.Ticker.addEventListener('tick', function() {
     game.update();
