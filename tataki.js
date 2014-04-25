@@ -23,7 +23,7 @@ Hole.prototype.addSakura = function() {
   // もぐら絵の下端を穴に沿って切り抜く
   sakura.mask = new createjs.Shape();
   sakura.mask.graphics
-    .rect(0, -sakura.height, sakura.width, sakura.height)
+    .rect(-100, -sakura.height, sakura.width+100, sakura.height)
     .drawEllipse(0, -this.holeH/2, this.width, this.holeH);
 
   // もぐらを叩いた
